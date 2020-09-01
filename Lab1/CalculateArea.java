@@ -1,5 +1,10 @@
 import java.util.Scanner;
 
+/**
+ * Student Name: Your Name
+ * SBU ID: 123456789
+ */
+
 public class CalculateArea {
 
     public static void main(String[] args) {
