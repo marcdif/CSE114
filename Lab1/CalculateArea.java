@@ -8,16 +8,26 @@ import java.util.Scanner;
 public class CalculateArea {
 
     public static void main(String[] args) {
-        double radius; // Declare radius
-        double area; // Declare area
-        System.out.print("Enter the radius:-->");
+        // Declare your variables
+        double radius;
+        double area;
+
+        // Print the instruction line
+        System.out.print("Enter the radius: ");
+
+        // Create a Scanner to read an input
         Scanner stdin = new Scanner(System.in);
-        radius = stdin.nextDouble(); // New value is radius
-        // Compute area
+
+        // Read a double from the Scanner and store it in the radius variable
+        radius = stdin.nextDouble();
+
+        // Calculate the area (PI*r^2, or PI*r*r), then store it in the area variable
         area = radius * radius * 3.14159;
-        // Display results
-        System.out.println("The area for the circle" +
-                " of radius " + radius + " is " + area);
+
+        // Print the results
+        System.out.println("The area for the circle" + " of radius " + radius + " is " + area);
+
+        // Close the scanner
         stdin.close();
     }
 }
